@@ -20,15 +20,15 @@
                             <td><p>{{ project.name }}</p></td>
                             <td><p>{{ project.desc }}</p></td>
                             {% if project.statusid == 1 %}
-                                <td><p>Unfulfilled</p></td>
+                                <td><p>Chưa thực hiện</p></td>
                             {% else %}
                                 {% if project.statusid == 2 %}
-                                <td><p>Processing</p></td>
+                                <td><p>Đang thực hiện</p></td>
                                 {% else %}
                                     {% if project.statusid == 3 %}
-                                    <td><p>Finish</p></td>
+                                    <td><p>Hoàn thành</p></td>
                                     {% else %}
-                                    <td><p>Out of date</p></td>
+                                    <td><p>Quá hạn</p></td>
                                     {% endif %}
                                 {% endif %}
                             {% endif %}
